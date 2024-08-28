@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int main()
+{
+    int n;
+    float sum,avg;
+
+    printf("enter size:");
+    scanf("%d",&n);
+
+    int a[n];
+
+    for(int i=0;i<n;i++)
+    {
+        printf("array:a[%d]",i);
+        scanf("%d",&a[i]);
+        sum+=a[i];
+    }
+    {
+        avg= sum/n;
+        printf("avarange of an arry:%.2f\n",avg);
+    }
+}
