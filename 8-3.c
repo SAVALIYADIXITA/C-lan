@@ -1,33 +1,29 @@
 #include<stdio.h>
-
 int main()
 {
-
     int n;
-
-    printf("enter size: ");
+    printf("enter size:");
     scanf("%d",&n);
 
     int a[n],b[n],c[n];
-
+    
     for(int i=0;i<n;i++)
     {
-        printf("array:a [%d]",i);
+        printf("enter a[%d]=",i);
         scanf("%d",&a[i]);
     }
     for(int i=0;i<n;i++)
     {
-        printf("array:b[%d]",i);
+        printf("enter b[%d]=",i);
         scanf("%d",&b[i]);
     }
     for(int i=0;i<n;i++)
     {
-        printf("array:c[%d]",i);
-        scanf("%d",&c[i]);
-        c[n]=a[i]+b[i];
-       
-    }
+        c[i]=a[i]+b[i];
+    }   
+    printf("\nArray c:");
+    for(int i=0;i<n;i++)
     {
-        printf("array c is %d:\n",c[n]);
-    }
+        printf("%d ",c[i]);
+    }    
 }

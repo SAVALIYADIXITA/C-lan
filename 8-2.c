@@ -3,7 +3,7 @@
 int main()
 {
     int n;
-    float sum,avg;
+    float avg=0,sum=0;
 
     printf("enter size:");
     scanf("%d",&n);
@@ -12,12 +12,15 @@ int main()
 
     for(int i=0;i<n;i++)
     {
-        printf("array:a[%d]",i);
+        printf("enter :a[%d]",i);
         scanf("%d",&a[i]);
-        sum+=a[i];
+        sum=sum+a[i];
+        avg=sum/n;
     }
     {
-        avg= sum/n;
-        printf("avarange of an arry:%.2f\n",avg);
+        printf("avg of an array:%.2f\n ",avg);
     }
+       
+        
+    
 }
