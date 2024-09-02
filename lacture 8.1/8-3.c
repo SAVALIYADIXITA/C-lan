@@ -20,11 +20,9 @@ int main()
     for(int i=0;i<n;i++)
     {
         c[i]=a[i]+b[i];
-        printf("%d",c[i]);
     }
+    for (int i=0;i<n;i++)
     {
-        printf("array c is = %d+ %d =%d");
-    }
-
-    
+        printf("%d ",c[i]);
+    }  
 }

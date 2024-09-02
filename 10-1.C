@@ -1,18 +1,19 @@
 #include<stdio.h>
- void cube()
+ int main()
  {
-    int a;
+    int n;
 
-    printf("enter a:");
-    scanf("%d",&a);
+    printf("enter array size:");
+    scanf("%d",&n);
 
-    printf("cube of %d=%d\n",a,a*a*a);
+    int a[n];
+    for(int i=0;i<n;i++)
+    {
+        printf("enter a[%d]=",i);
+        scanf("%d",&a[i]);
+    }
+    
+
+    printf("square of %d=%d\n",a,a[i]*a[i]*a[i]);
  }
 
-int main()
-{
-    printf("START...\n");
-    cube();
-    printf("END...\n");
-
-}

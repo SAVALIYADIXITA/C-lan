@@ -2,9 +2,9 @@
 
 int main()
 {
-    int n,total,product,bill,gst,price,qty;
+    float n,total,product,bill,gst,price,qty;
     printf("enter size:");
-    scanf("%d ",n);
+    scanf("%f",n);
 
       int a[n] ;
      for(i=0;i<n;i++)
@@ -26,11 +26,7 @@ int main()
          {
             printf("enter qty[%d]:",i);
             scanf("%d ",qty[i]);
-         }
-         
-     }
-    
+         }         
+     }    
      printf("arry:");   
-
-
 }
