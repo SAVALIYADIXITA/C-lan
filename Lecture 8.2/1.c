@@ -2,45 +2,40 @@
 
 int main()
 {
-    int n,j;
-    printf("enter size:");
-    scanf("%d",&n);
+    int n1,n2,i;
+    printf("enter array A's size:");
+    scanf("%d",&n1);
 
-    int a[n],b[n],c[n];
-
-    for(int i=0;i<n;i++)
+    int a[n1];
+    for(int i=0;i<n1;i++)
     {
-        printf("enter :a[%d]",i);
+        printf("a[%d]:",i);
         scanf("%d",&a[i]);
     }
+    
+    printf("enter array B's size:");
+    scanf("%d",&n2);
 
-    int n;
-    printf("enter size:");
-    scanf("%d",&n);
-
-    for(int i=0;i<n;i++)
+    int b[n2];
+    for(int i=0;i<n2;i++)
     {
-        printf("enter :b[%d]",i);
+        printf("b[%d]:",i);
         scanf("%d",&b[i]);
     }
-    c[i]=a[i]+b[i];
-
-    for(int i=0;i<a[i];i++)
+    int n3=n1+n2;
+    int c[n3];    
+    for(int i=0;i<n1;i++)
     {
         c[i]=a[i];
     }
-    for(int j=0;j<b[i];j++)
+    for(int i=0;i<n2;i++)
     {
-        c[i]=b[i];
+        c[n1+i]=b[i];
     }
-    printf("array c is \n");
-    for(int i=0;i<c;i++)
+    printf("array c is :");
+    for(int i=0;i<n3;i++)
     {
-        printf("%d ",c);
-        if(int i<c-1)
-        {
-            printf(",");
-        }
+        printf("%d, ",c[i]);        
     }
     printf("\n");
     
